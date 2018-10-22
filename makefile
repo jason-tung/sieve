@@ -1,5 +1,5 @@
 all: main.o sieve.o
-	gcc -o test main.o sieve.o
+	gcc -o test main.o sieve.o -lm
 
 main.o: main.c
 	gcc -c main.c
