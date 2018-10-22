@@ -1,10 +1,17 @@
+#include "sieve.h"
 
-
-unsigned int findPrime(int n){
-  if (n == 1) return 2;
-  int size = n * log(n) * 1.15;
-  unsigned int [size] hello;
-  for (unsigned int i = 3; i < size / 2; i+=2){
-    hello[i]
-  }
+int sieve(int n){
+    int men = 2;
+    int size = n * log(n) * 1.15;
+    char * stuffs = calloc(size , sizeof(char));
+    for (unsigned int i = 3; n - 1; i+=2){
+        if (stuffs[i] == 0){
+            for (int j = i; j < size; j+=i){
+                stuffs[j] = 1;
+            }
+            men = i;
+            n--;
+        }
+    }
+    return men;
 }

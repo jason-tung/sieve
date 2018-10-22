@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jason/systems/sieve/main.c
+sieve.h
+/Users/jason/systems/sieve/sieve.h
+
+/Users/jason/systems/sieve/sieve.c
+sieve.h
+/Users/jason/systems/sieve/sieve.h
+
+/Users/jason/systems/sieve/sieve.h
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
